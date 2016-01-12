@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Form Letter</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Your Receipt</h1>
+
+      <div class="blanks col-sm-6">
+
+        <form>
+          <div class="form-group">
+            <label for="first-name">Your First Name</label>
+            <input id="first-name" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Your Last Name</label>
+            <input id="last-name" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="address">Your Home Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="city">Your City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="state">Your State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="zip">Your Zip Code</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn">Generate Receipt</button>
+        </form>
+
+      </div>
+
+      <div class="receipt">
+        <h1>Receipt</h1>
+        <p>Dear <span class="first-name"></span>,</p>
+        <p>
+          Thank you for your purhcase of our widgets! Below is a receipt of your purchase.
+        </p>
+
+        <img src="images/widget.jpg" alt="widget" />
+
+        <p><span class="first-name"></span></p>
+        <p><span class="last-name"></span></p>
+        <p><span class="address"></span></p>
+        <p><span class="city"></span>, <span class="state"></span>,</p>
+        <p><span class="zip"></span></p>
+
+        <p>Total: $888</p>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
